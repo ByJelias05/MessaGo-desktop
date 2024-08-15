@@ -47,23 +47,23 @@
             this.TitleLogin1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.TitleLogin2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelCreateUser = new Guna.UI2.WinForms.Guna2Panel();
+            this.TxtRepeatPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Separator7 = new Guna.UI2.WinForms.Guna2Separator();
+            this.TxtNewPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Separator6 = new Guna.UI2.WinForms.Guna2Separator();
+            this.TxtNewEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
             this.BtnCreateUSer = new Guna.UI2.WinForms.Guna2Button();
             this.TxtUserId = new Guna.UI2.WinForms.Guna2TextBox();
             this.TxtCompleteName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.TxtNewEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
-            this.TxtNewPass = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Separator6 = new Guna.UI2.WinForms.Guna2Separator();
-            this.TxtRepeatPass = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Separator7 = new Guna.UI2.WinForms.Guna2Separator();
             this.PanelHelp = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.BtnYes = new Guna.UI2.WinForms.Guna2Button();
             this.BtnNo = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnYes = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PanelSesion.SuspendLayout();
@@ -83,7 +83,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // bunifuElipse1
             // 
@@ -156,7 +155,7 @@
             this.BtnLogin.TabIndex = 12;
             this.BtnLogin.Text = "LOGIN";
             this.BtnLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnLogin.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // TxtPassword
             // 
@@ -329,6 +328,99 @@
             this.PanelCreateUser.TabIndex = 14;
             this.PanelCreateUser.Visible = false;
             // 
+            // TxtRepeatPass
+            // 
+            this.TxtRepeatPass.BorderThickness = 0;
+            this.TxtRepeatPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtRepeatPass.DefaultText = "";
+            this.TxtRepeatPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TxtRepeatPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TxtRepeatPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtRepeatPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtRepeatPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtRepeatPass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtRepeatPass.ForeColor = System.Drawing.Color.DarkGray;
+            this.TxtRepeatPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtRepeatPass.IconRight = ((System.Drawing.Image)(resources.GetObject("TxtRepeatPass.IconRight")));
+            this.TxtRepeatPass.Location = new System.Drawing.Point(127, 203);
+            this.TxtRepeatPass.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtRepeatPass.Name = "TxtRepeatPass";
+            this.TxtRepeatPass.PasswordChar = '\0';
+            this.TxtRepeatPass.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.TxtRepeatPass.PlaceholderText = "Repeat password";
+            this.TxtRepeatPass.SelectedText = "";
+            this.TxtRepeatPass.Size = new System.Drawing.Size(104, 33);
+            this.TxtRepeatPass.TabIndex = 19;
+            // 
+            // guna2Separator7
+            // 
+            this.guna2Separator7.Location = new System.Drawing.Point(127, 231);
+            this.guna2Separator7.Name = "guna2Separator7";
+            this.guna2Separator7.Size = new System.Drawing.Size(106, 10);
+            this.guna2Separator7.TabIndex = 18;
+            // 
+            // TxtNewPass
+            // 
+            this.TxtNewPass.BorderThickness = 0;
+            this.TxtNewPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtNewPass.DefaultText = "";
+            this.TxtNewPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TxtNewPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TxtNewPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtNewPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtNewPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtNewPass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNewPass.ForeColor = System.Drawing.Color.DarkGray;
+            this.TxtNewPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtNewPass.IconRight = ((System.Drawing.Image)(resources.GetObject("TxtNewPass.IconRight")));
+            this.TxtNewPass.Location = new System.Drawing.Point(7, 203);
+            this.TxtNewPass.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtNewPass.Name = "TxtNewPass";
+            this.TxtNewPass.PasswordChar = '\0';
+            this.TxtNewPass.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.TxtNewPass.PlaceholderText = "Password";
+            this.TxtNewPass.SelectedText = "";
+            this.TxtNewPass.Size = new System.Drawing.Size(106, 33);
+            this.TxtNewPass.TabIndex = 17;
+            // 
+            // guna2Separator6
+            // 
+            this.guna2Separator6.Location = new System.Drawing.Point(7, 231);
+            this.guna2Separator6.Name = "guna2Separator6";
+            this.guna2Separator6.Size = new System.Drawing.Size(106, 10);
+            this.guna2Separator6.TabIndex = 16;
+            // 
+            // TxtNewEmail
+            // 
+            this.TxtNewEmail.BorderThickness = 0;
+            this.TxtNewEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtNewEmail.DefaultText = "";
+            this.TxtNewEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TxtNewEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TxtNewEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtNewEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtNewEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtNewEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNewEmail.ForeColor = System.Drawing.Color.DarkGray;
+            this.TxtNewEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtNewEmail.IconRight = ((System.Drawing.Image)(resources.GetObject("TxtNewEmail.IconRight")));
+            this.TxtNewEmail.Location = new System.Drawing.Point(127, 152);
+            this.TxtNewEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtNewEmail.Name = "TxtNewEmail";
+            this.TxtNewEmail.PasswordChar = '\0';
+            this.TxtNewEmail.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.TxtNewEmail.PlaceholderText = "New Email";
+            this.TxtNewEmail.SelectedText = "";
+            this.TxtNewEmail.Size = new System.Drawing.Size(106, 35);
+            this.TxtNewEmail.TabIndex = 15;
+            // 
+            // guna2Separator5
+            // 
+            this.guna2Separator5.Location = new System.Drawing.Point(127, 184);
+            this.guna2Separator5.Name = "guna2Separator5";
+            this.guna2Separator5.Size = new System.Drawing.Size(106, 10);
+            this.guna2Separator5.TabIndex = 14;
+            // 
             // BtnCreateUSer
             // 
             this.BtnCreateUSer.Animated = true;
@@ -349,6 +441,7 @@
             this.BtnCreateUSer.TabIndex = 12;
             this.BtnCreateUSer.Text = "CREATE";
             this.BtnCreateUSer.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BtnCreateUSer.Click += new System.EventHandler(this.BtnCreateUSer_Click);
             // 
             // TxtUserId
             // 
@@ -365,7 +458,7 @@
             this.TxtUserId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TxtUserId.IconRight = ((System.Drawing.Image)(resources.GetObject("TxtUserId.IconRight")));
             this.TxtUserId.Location = new System.Drawing.Point(10, 154);
-            this.TxtUserId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtUserId.Margin = new System.Windows.Forms.Padding(4);
             this.TxtUserId.Name = "TxtUserId";
             this.TxtUserId.PasswordChar = '\0';
             this.TxtUserId.PlaceholderForeColor = System.Drawing.Color.DarkGray;
@@ -390,7 +483,7 @@
             this.TxtCompleteName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TxtCompleteName.IconRight = ((System.Drawing.Image)(resources.GetObject("TxtCompleteName.IconRight")));
             this.TxtCompleteName.Location = new System.Drawing.Point(8, 105);
-            this.TxtCompleteName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtCompleteName.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCompleteName.Name = "TxtCompleteName";
             this.TxtCompleteName.PasswordChar = '\0';
             this.TxtCompleteName.PlaceholderForeColor = System.Drawing.Color.DarkGray;
@@ -426,99 +519,6 @@
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // TxtNewEmail
-            // 
-            this.TxtNewEmail.BorderThickness = 0;
-            this.TxtNewEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtNewEmail.DefaultText = "";
-            this.TxtNewEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtNewEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtNewEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtNewEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtNewEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtNewEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNewEmail.ForeColor = System.Drawing.Color.DarkGray;
-            this.TxtNewEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtNewEmail.IconRight = ((System.Drawing.Image)(resources.GetObject("TxtNewEmail.IconRight")));
-            this.TxtNewEmail.Location = new System.Drawing.Point(127, 152);
-            this.TxtNewEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TxtNewEmail.Name = "TxtNewEmail";
-            this.TxtNewEmail.PasswordChar = '\0';
-            this.TxtNewEmail.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.TxtNewEmail.PlaceholderText = "New Email";
-            this.TxtNewEmail.SelectedText = "";
-            this.TxtNewEmail.Size = new System.Drawing.Size(106, 35);
-            this.TxtNewEmail.TabIndex = 15;
-            // 
-            // guna2Separator5
-            // 
-            this.guna2Separator5.Location = new System.Drawing.Point(127, 184);
-            this.guna2Separator5.Name = "guna2Separator5";
-            this.guna2Separator5.Size = new System.Drawing.Size(106, 10);
-            this.guna2Separator5.TabIndex = 14;
-            // 
-            // TxtNewPass
-            // 
-            this.TxtNewPass.BorderThickness = 0;
-            this.TxtNewPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtNewPass.DefaultText = "";
-            this.TxtNewPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtNewPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtNewPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtNewPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtNewPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtNewPass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNewPass.ForeColor = System.Drawing.Color.DarkGray;
-            this.TxtNewPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtNewPass.IconRight = ((System.Drawing.Image)(resources.GetObject("TxtNewPass.IconRight")));
-            this.TxtNewPass.Location = new System.Drawing.Point(7, 203);
-            this.TxtNewPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TxtNewPass.Name = "TxtNewPass";
-            this.TxtNewPass.PasswordChar = '\0';
-            this.TxtNewPass.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.TxtNewPass.PlaceholderText = "Password";
-            this.TxtNewPass.SelectedText = "";
-            this.TxtNewPass.Size = new System.Drawing.Size(106, 33);
-            this.TxtNewPass.TabIndex = 17;
-            // 
-            // guna2Separator6
-            // 
-            this.guna2Separator6.Location = new System.Drawing.Point(7, 231);
-            this.guna2Separator6.Name = "guna2Separator6";
-            this.guna2Separator6.Size = new System.Drawing.Size(106, 10);
-            this.guna2Separator6.TabIndex = 16;
-            // 
-            // TxtRepeatPass
-            // 
-            this.TxtRepeatPass.BorderThickness = 0;
-            this.TxtRepeatPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtRepeatPass.DefaultText = "";
-            this.TxtRepeatPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtRepeatPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtRepeatPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtRepeatPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtRepeatPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtRepeatPass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtRepeatPass.ForeColor = System.Drawing.Color.DarkGray;
-            this.TxtRepeatPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtRepeatPass.IconRight = ((System.Drawing.Image)(resources.GetObject("TxtRepeatPass.IconRight")));
-            this.TxtRepeatPass.Location = new System.Drawing.Point(127, 203);
-            this.TxtRepeatPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TxtRepeatPass.Name = "TxtRepeatPass";
-            this.TxtRepeatPass.PasswordChar = '\0';
-            this.TxtRepeatPass.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.TxtRepeatPass.PlaceholderText = "Repeat password";
-            this.TxtRepeatPass.SelectedText = "";
-            this.TxtRepeatPass.Size = new System.Drawing.Size(104, 33);
-            this.TxtRepeatPass.TabIndex = 19;
-            // 
-            // guna2Separator7
-            // 
-            this.guna2Separator7.Location = new System.Drawing.Point(127, 231);
-            this.guna2Separator7.Name = "guna2Separator7";
-            this.guna2Separator7.Size = new System.Drawing.Size(106, 10);
-            this.guna2Separator7.TabIndex = 18;
-            // 
             // PanelHelp
             // 
             this.PanelHelp.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(206)))), ((int)(((byte)(249)))));
@@ -533,47 +533,6 @@
             this.PanelHelp.Size = new System.Drawing.Size(132, 100);
             this.PanelHelp.TabIndex = 20;
             this.PanelHelp.Visible = false;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(206)))), ((int)(((byte)(249)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(21, 6);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(94, 19);
-            this.guna2HtmlLabel1.TabIndex = 21;
-            this.guna2HtmlLabel1.Text = "Did you forget";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(206)))), ((int)(((byte)(249)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(20, 28);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(99, 19);
-            this.guna2HtmlLabel2.TabIndex = 22;
-            this.guna2HtmlLabel2.Text = " your password?";
-            // 
-            // BtnYes
-            // 
-            this.BtnYes.Animated = true;
-            this.BtnYes.BorderRadius = 10;
-            this.BtnYes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnYes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnYes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnYes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnYes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnYes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(189)))), ((int)(((byte)(228)))));
-            this.BtnYes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnYes.ForeColor = System.Drawing.Color.White;
-            this.BtnYes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.BtnYes.Location = new System.Drawing.Point(20, 55);
-            this.BtnYes.Name = "BtnYes";
-            this.BtnYes.Size = new System.Drawing.Size(47, 36);
-            this.BtnYes.TabIndex = 20;
-            this.BtnYes.Text = "YES";
             // 
             // BtnNo
             // 
@@ -594,6 +553,47 @@
             this.BtnNo.TabIndex = 23;
             this.BtnNo.Text = "NO";
             this.BtnNo.Click += new System.EventHandler(this.BtnNo_Click);
+            // 
+            // BtnYes
+            // 
+            this.BtnYes.Animated = true;
+            this.BtnYes.BorderRadius = 10;
+            this.BtnYes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnYes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnYes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnYes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnYes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnYes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(189)))), ((int)(((byte)(228)))));
+            this.BtnYes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnYes.ForeColor = System.Drawing.Color.White;
+            this.BtnYes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BtnYes.Location = new System.Drawing.Point(20, 55);
+            this.BtnYes.Name = "BtnYes";
+            this.BtnYes.Size = new System.Drawing.Size(47, 36);
+            this.BtnYes.TabIndex = 20;
+            this.BtnYes.Text = "YES";
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(206)))), ((int)(((byte)(249)))));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(20, 28);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(99, 19);
+            this.guna2HtmlLabel2.TabIndex = 22;
+            this.guna2HtmlLabel2.Text = " your password?";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(206)))), ((int)(((byte)(249)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(21, 6);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(94, 19);
+            this.guna2HtmlLabel1.TabIndex = 21;
+            this.guna2HtmlLabel1.Text = "Did you forget";
             // 
             // Form1
             // 

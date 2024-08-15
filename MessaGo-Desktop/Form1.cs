@@ -7,20 +7,61 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Google.Cloud.Firestore;
+using Firebase.Storage;
+using System.IO;
 
 namespace MessaGo_Desktop
 {
     public partial class Form1 : Form
     {
+        FirestoreDb db;
         public Form1()
         {
             InitializeComponent();
+
+            var path = AppDomain.CurrentDomain.BaseDirectory + @"\messago-714d2-firebase-adminsdk-a4zc7-a4623d5545.json";
+
+            if(File.Exists(path))
+            {
+                Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path );
+                db = FirestoreDb.Create("messago-714d2");
+                MessageBox.Show("La app inicializo bien");
+            }
+            else
+            {
+                MessageBox.Show("Error de conexion");
+            }
+
         }
 
- 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private async Task CrearUsuario(Collections.Users Usuario)
         {
+            CollectionReference collection = db.Collection("Usuarios");
 
+            DocumentReference doc = await collection.AddAsync(Usuario);
+
+            MessageBox.Show("Usuario creado con exito");
+        }
+
+        private async Task<List<Collections.Users>> IniciarSesion(string Email)
+        {
+            CollectionReference collection = db.Collection("Usuarios");
+
+            var query = collection.WhereEqualTo("Email", Email);
+
+            QuerySnapshot snapshot = await query.GetSnapshotAsync();
+
+            List<Collections.Users> Usuario = new List<Collections.Users>();
+
+            foreach(DocumentSnapshot doc in snapshot)
+            {
+                Collections.Users user = doc.ConvertTo<Collections.Users>();
+                user.ID = doc.Id;
+                Usuario.Add(user);
+            }
+
+            return Usuario;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -33,11 +74,6 @@ namespace MessaGo_Desktop
             {
                 PanelHelp.Visible = false;
             }
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void BtnSwitchLogin_Click(object sender, EventArgs e)
@@ -63,6 +99,38 @@ namespace MessaGo_Desktop
         private void BtnNo_Click(object sender, EventArgs e)
         {
             PanelHelp.Visible = false;
+        }
+
+        private async void BtnCreateUSer_Click(object sender, EventArgs e)
+        {
+            Collections.Users Usuario = new Collections.Users()
+            {
+                CompleteName = TxtCompleteName.Text,
+                UserID = TxtUserId.Text,
+                Email = TxtNewEmail.Text,
+                PassWord = TxtNewPass.Text,
+                PhotoUrl = null,
+                StatuUSer = "Offline",
+                LastTime = null,
+            };
+
+            await CrearUsuario(Usuario);
+        }
+
+        private async void BtnLogin_Click(object sender, EventArgs e)
+        {
+            var USuarios = await IniciarSesion(TxtEmail.Text);
+
+            foreach (var us in USuarios)
+            {
+               if(us.PassWord == TxtPassword.Text)
+               {
+                    AppChat app = new AppChat();
+                    app.UserId.Text = us.UserID.ToString();
+                    app.Show();
+                    this.Hide();
+               }
+            }
         }
     }
 }

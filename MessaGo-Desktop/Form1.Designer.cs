@@ -413,6 +413,7 @@
             this.TxtNewEmail.SelectedText = "";
             this.TxtNewEmail.Size = new System.Drawing.Size(106, 35);
             this.TxtNewEmail.TabIndex = 15;
+            this.TxtNewEmail.TextChanged += new System.EventHandler(this.TxtNewEmail_TextChanged);
             // 
             // guna2Separator5
             // 

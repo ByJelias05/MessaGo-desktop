@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Google.Cloud.Firestore;
 using Firebase.Storage;
 using System.IO;
+using System.Data.SqlClient;
 
 namespace MessaGo_Desktop
 {
@@ -103,23 +104,35 @@ namespace MessaGo_Desktop
 
         private async void BtnCreateUSer_Click(object sender, EventArgs e)
         {
-            Collections.Users Usuario = new Collections.Users()
+            if (TxtNewEmail.Text.Contains("@messago.com"))
             {
-                CompleteName = TxtCompleteName.Text,
-                UserID = TxtUserId.Text,
-                Email = TxtNewEmail.Text,
-                PassWord = TxtNewPass.Text,
-                PhotoUrl = null,
-                StatuUSer = "Offline",
-                LastTime = null,
-            };
+                Collections.Users Usuario = new Collections.Users()
+                {
+                    CompleteName = TxtCompleteName.Text,
+                    UserID = TxtUserId.Text,
+                    Email = TxtNewEmail.Text,
+                    PassWord = TxtNewPass.Text,
+                    PhotoUrl = null,
+                    StatuUSer = "Offline",
+                    LastTime = null,
+                };
 
-            await CrearUsuario(Usuario);
+                await CrearUsuario(Usuario);
+            }
+            else
+            {
+                MessageBox.Show("Ese correo no es valido: debe ser example@messago.com");
+            }
         }
 
         private async void BtnLogin_Click(object sender, EventArgs e)
         {
             var USuarios = await IniciarSesion(TxtEmail.Text);
+
+            if(USuarios.Count < 1)
+            {
+                MessageBox.Show("Usuario no encontrado");
+            }
 
             foreach (var us in USuarios)
             {
@@ -130,6 +143,18 @@ namespace MessaGo_Desktop
                     app.Show();
                     this.Hide();
                }
+                else
+                {
+                    MessageBox.Show("Contraseña incorrecta");
+                }
+            }
+        }
+
+        private void TxtNewEmail_TextChanged(object sender, EventArgs e)
+        {
+            if (!TxtNewEmail.Text.Contains("@messago.com"))
+            {
+                TxtNewEmail.Text = "@messago.com";
             }
         }
     }

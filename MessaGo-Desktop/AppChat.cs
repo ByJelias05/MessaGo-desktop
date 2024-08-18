@@ -73,5 +73,15 @@ namespace MessaGo_Desktop
                 pp.Visible = false;
             
         }
+
+        private void BtnMinimizer_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

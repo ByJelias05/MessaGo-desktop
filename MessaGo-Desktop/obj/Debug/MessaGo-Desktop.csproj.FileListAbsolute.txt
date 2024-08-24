@@ -78,3 +78,10 @@ C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Des
 C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo-Desktop.csproj.SuggestedBindingRedirects.cache
 C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo-Desktop.exe.config
 C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.AppChat.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Components.Friends.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Messages.MyMessage.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Components_Users.Acept.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Messages.YouMessage.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Modals.ModalAddFriend.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Modals.ModalCreateGroup.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Components_Users.AddGroup.resources

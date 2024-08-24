@@ -30,10 +30,10 @@ namespace MessaGo_Desktop
                 TransitionBtns.HideSync(BtnAll);
                 TransitionBtns.HideSync(BtnNoRead);
                 TransitionBtns.HideSync(BtnGroups);
-                TransitionBtns.HideSync(b1);
-                TransitionBtns.HideSync(b2);
-                TransitionBtns.HideSync(b3);
-                TransitionBtns.HideSync(b4);
+                //TransitionBtns.HideSync(b1);
+                //TransitionBtns.HideSync(b2);
+                //TransitionBtns.HideSync(b3);
+                //TransitionBtns.HideSync(b4);
               
 
                 TransitionPanel.ShowSync(PanelMiPerfil);
@@ -46,10 +46,10 @@ namespace MessaGo_Desktop
         {
             TransitionPanel.HideSync(PanelMiPerfil);
 
-            TransitionBtns.ShowSync(b4);
-            TransitionBtns.ShowSync(b3);
-            TransitionBtns.ShowSync(b2);
-            TransitionBtns.ShowSync(b1);
+            //TransitionBtns.ShowSync(b4);
+            //TransitionBtns.ShowSync(b3);
+            //TransitionBtns.ShowSync(b2);
+            //TransitionBtns.ShowSync(b1);
 
             TransitionBtns.ShowSync(BtnGroups);
             TransitionBtns.ShowSync(BtnNoRead);
@@ -83,5 +83,6 @@ namespace MessaGo_Desktop
         {
             Application.Exit();
         }
+
     }
 }

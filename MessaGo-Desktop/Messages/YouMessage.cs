@@ -16,5 +16,20 @@ namespace MessaGo_Desktop.Messages
         {
             InitializeComponent();
         }
+
+
+        public string Message
+        {
+            get
+            {
+                return label1.Text;
+            }
+            set
+            {
+                label1.Text = value;
+            }
+        }
     }
+
+
 }

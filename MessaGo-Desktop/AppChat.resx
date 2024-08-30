@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="TransitionPanel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>370, 17</value>
+  <metadata name="TransitionBtns.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>151, 17</value>
   </metadata>
   <data name="animation1.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -193,8 +193,8 @@
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <metadata name="TransitionBtns.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>151, 17</value>
+  <metadata name="TransitionPanel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>370, 17</value>
   </metadata>
   <data name="animation3.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -293,7 +293,7 @@
         gg==
 </value>
   </data>
-  <data name="guna2Button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnConfig.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAA+9JREFUaEPt
         mT1rFEEYx9PZ5iPkI+QbJB9AUBFRUDCFrfZWprZJ7OySRhsLU9oY02nAStBOo1F8RRNQRBSJ/9/u7DI7
@@ -315,7 +315,7 @@
         MZWe82coZfPvdYdAgVnDZrg/OvtCQdNjnP8rMdSGXSNmzJjhmJv7A9LWQSQirCmxAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="guna2Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnCreateGroup.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAp5JREFUaEPt
         mY1R5DAMRrcESqAESqAEOjg6gA6gA+gAOoAOoAPoADqADva+F8sek40T23GGvRu/Gc3uKJYirf+1u06n
@@ -332,7 +332,7 @@
         dn8BoIl9ZdTVkOEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2Button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnAddFriend.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAA7tJREFUaEPt
         mYtR5DAQRDcEQiAEMjhCIAPIADI4MjgygAwgA8gAMoAMuAx83VK3Vmt7bcv22i7qXtUU9mgkjVYz+pjd
@@ -354,7 +354,7 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="guna2Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnAddFriend.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAA7tJREFUaEPt
         mYtR5DAQRDcEQiAEMjhCIAPIADI4MjgygAwgA8gAMoAMuAx83VK3Vmt7bcv22i7qXtUU9mgkjVYz+pjd
@@ -446,15 +446,9 @@
         ukWN6haqrwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAANFJREFUSEvt
-        lEEWgiAQQLkQLNrUKdp3G2/gPGsfqGeobZ2ko9TAm0EEe4G1aMF/j6fMOB8dUVGpvEWdho3q9EEeR0kh
-        j2oNSDBPPDYUKkN1487KeVDYgVJt5TwonE8st09CqURun4RSeSRynFNqSa4plcf/yu0ucEVBLxm8uKHC
-        yyq5ZSrEAf2Wwo6wWLbmtqotvJ/jRVxboL+GEgn67HK5cibpMQx7PkfBfSYD85jNP8mZZBE/MB7dcbGc
-        SRf54VZk/DtZ3lX8jyn7QiuVLxDiBdEJG4oYVoZpAAAAAElFTkSuQmCC
-</value>
-  </data>
+  <metadata name="guna2AnimateWindow1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>504, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>53</value>
   </metadata>

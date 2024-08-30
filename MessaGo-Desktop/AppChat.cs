@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -84,5 +85,52 @@ namespace MessaGo_Desktop
             Application.Exit();
         }
 
+        private void BtnAddFriend_Click(object sender, EventArgs e)
+        {
+            Form Sombra = new Form();
+
+            using (Modals.AddFriend.Prueba Modal = new Modals.AddFriend.Prueba())
+            {
+
+                Sombra.StartPosition = FormStartPosition.CenterScreen;
+                Sombra.FormBorderStyle = FormBorderStyle.None;
+                Sombra.Size = this.Size;
+                Sombra.Opacity = .50;
+                Sombra.BackColor = Color.Black;
+                Sombra.ShowInTaskbar = false;
+                Sombra.Show();
+                Modal.Owner = Sombra;
+                
+
+
+                Modal.ShowDialog();
+                Sombra.Dispose();
+            }
+                
+
+        }
+
+        private void BtnCreateGroup_Click(object sender, EventArgs e)
+        {
+            Form Sombra = new Form();
+
+            using (Modals.CreateGroup.Modal Modal = new Modals.CreateGroup.Modal())
+            {
+
+                Sombra.StartPosition = FormStartPosition.CenterScreen;
+                Sombra.FormBorderStyle = FormBorderStyle.None;
+                Sombra.Size = this.Size;
+                Sombra.Opacity = .50;
+                Sombra.BackColor = Color.Black;
+                Sombra.ShowInTaskbar = false;
+                Sombra.Show();
+                Modal.Owner = Sombra;
+
+
+
+                Modal.ShowDialog();
+                Sombra.Dispose();
+            }
+        }
     }
 }

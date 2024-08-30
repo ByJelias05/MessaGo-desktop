@@ -82,6 +82,10 @@ C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Des
 C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Messages.MyMessage.resources
 C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Components_Users.Acept.resources
 C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Messages.YouMessage.resources
-C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Modals.ModalAddFriend.resources
-C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Modals.ModalCreateGroup.resources
 C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Components_Users.AddGroup.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Modal.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Modals.AddFriend.Modal.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Modals.AddFriend.ModalAddFriend.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Modals.CreateGroup.Modal.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Modals.CreateGroup.ModalCreateGroup.resources
+C:\Users\Acer\Desktop\Contenedor\Pryectos Escritorio\MessaGo-Desktop\MessaGo-Desktop\obj\Debug\MessaGo_Desktop.Modals.AddFriend.Prueba.resources

@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            this.components = new System.ComponentModel.Container();
             Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppChat));
+            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
             this.PanelContenedorIzquierdo = new Guna.UI2.WinForms.Guna2Panel();
-            this.PanelContenedorFriends = new Guna.UI2.WinForms.Guna2Panel();
             this.PanelMiPerfil = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -45,6 +45,17 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.PanelContenedorFriends = new Guna.UI2.WinForms.Guna2Panel();
+            this.friends10 = new MessaGo_Desktop.Components.Friends();
+            this.friends9 = new MessaGo_Desktop.Components.Friends();
+            this.friends8 = new MessaGo_Desktop.Components.Friends();
+            this.friends7 = new MessaGo_Desktop.Components.Friends();
+            this.friends6 = new MessaGo_Desktop.Components.Friends();
+            this.friends5 = new MessaGo_Desktop.Components.Friends();
+            this.friends4 = new MessaGo_Desktop.Components.Friends();
+            this.friends3 = new MessaGo_Desktop.Components.Friends();
+            this.friends2 = new MessaGo_Desktop.Components.Friends();
+            this.friends1 = new MessaGo_Desktop.Components.Friends();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -53,9 +64,9 @@
             this.BtnNoRead = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAll = new Guna.UI2.WinForms.Guna2Button();
             this.PanelTopIzquierdo = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnConfig = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnCreateGroup = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnAddFriend = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -75,44 +86,23 @@
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CirclePictureBox7 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.PanelContenedorCentral = new Guna.UI2.WinForms.Guna2Panel();
+            this.myMessage1 = new MessaGo_Desktop.Messages.MyMessage();
+            this.myMessage2 = new MessaGo_Desktop.Messages.MyMessage();
+            this.youMessage1 = new MessaGo_Desktop.Messages.YouMessage();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictux4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button15 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.TransitionBtns = new Guna.UI2.WinForms.Guna2Transition();
             this.Prueba = new Guna.UI2.WinForms.Guna2Transition();
-            this.friends10 = new MessaGo_Desktop.Components.Friends();
-            this.friends9 = new MessaGo_Desktop.Components.Friends();
-            this.friends8 = new MessaGo_Desktop.Components.Friends();
-            this.friends7 = new MessaGo_Desktop.Components.Friends();
-            this.friends6 = new MessaGo_Desktop.Components.Friends();
-            this.friends5 = new MessaGo_Desktop.Components.Friends();
-            this.friends4 = new MessaGo_Desktop.Components.Friends();
-            this.friends3 = new MessaGo_Desktop.Components.Friends();
-            this.friends2 = new MessaGo_Desktop.Components.Friends();
-            this.friends1 = new MessaGo_Desktop.Components.Friends();
             this.TransitionPanel = new Guna.UI2.WinForms.Guna2Transition();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.PanelContenedorIzquierdo.SuspendLayout();
-            this.PanelContenedorFriends.SuspendLayout();
             this.PanelMiPerfil.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
+            this.PanelContenedorFriends.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.PanelTopIzquierdo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -126,15 +116,14 @@
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictux4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelContenedorIzquierdo
             // 
             this.PanelContenedorIzquierdo.BackColor = System.Drawing.Color.White;
             this.PanelContenedorIzquierdo.BorderThickness = 5;
-            this.PanelContenedorIzquierdo.Controls.Add(this.PanelContenedorFriends);
             this.PanelContenedorIzquierdo.Controls.Add(this.PanelMiPerfil);
+            this.PanelContenedorIzquierdo.Controls.Add(this.PanelContenedorFriends);
             this.PanelContenedorIzquierdo.Controls.Add(this.guna2Panel1);
             this.PanelContenedorIzquierdo.Controls.Add(this.PanelTopIzquierdo);
             this.PanelContenedorIzquierdo.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
@@ -148,29 +137,6 @@
             this.PanelContenedorIzquierdo.Size = new System.Drawing.Size(297, 504);
             this.PanelContenedorIzquierdo.TabIndex = 1;
             this.PanelContenedorIzquierdo.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
-            // 
-            // PanelContenedorFriends
-            // 
-            this.PanelContenedorFriends.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelContenedorFriends.Controls.Add(this.friends10);
-            this.PanelContenedorFriends.Controls.Add(this.friends9);
-            this.PanelContenedorFriends.Controls.Add(this.friends8);
-            this.PanelContenedorFriends.Controls.Add(this.friends7);
-            this.PanelContenedorFriends.Controls.Add(this.friends6);
-            this.PanelContenedorFriends.Controls.Add(this.friends5);
-            this.PanelContenedorFriends.Controls.Add(this.friends4);
-            this.PanelContenedorFriends.Controls.Add(this.friends3);
-            this.PanelContenedorFriends.Controls.Add(this.friends2);
-            this.PanelContenedorFriends.Controls.Add(this.friends1);
-            this.TransitionBtns.SetDecoration(this.PanelContenedorFriends, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.PanelContenedorFriends, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.PanelContenedorFriends, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.PanelContenedorFriends.Location = new System.Drawing.Point(12, 196);
-            this.PanelContenedorFriends.Name = "PanelContenedorFriends";
-            this.PanelContenedorFriends.Size = new System.Drawing.Size(282, 305);
-            this.PanelContenedorFriends.TabIndex = 34;
             // 
             // PanelMiPerfil
             // 
@@ -336,6 +302,139 @@
             this.guna2ImageButton1.TabIndex = 33;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
+            // PanelContenedorFriends
+            // 
+            this.PanelContenedorFriends.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelContenedorFriends.Controls.Add(this.friends10);
+            this.PanelContenedorFriends.Controls.Add(this.friends9);
+            this.PanelContenedorFriends.Controls.Add(this.friends8);
+            this.PanelContenedorFriends.Controls.Add(this.friends7);
+            this.PanelContenedorFriends.Controls.Add(this.friends6);
+            this.PanelContenedorFriends.Controls.Add(this.friends5);
+            this.PanelContenedorFriends.Controls.Add(this.friends4);
+            this.PanelContenedorFriends.Controls.Add(this.friends3);
+            this.PanelContenedorFriends.Controls.Add(this.friends2);
+            this.PanelContenedorFriends.Controls.Add(this.friends1);
+            this.TransitionBtns.SetDecoration(this.PanelContenedorFriends, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.PanelContenedorFriends, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionPanel.SetDecoration(this.PanelContenedorFriends, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.PanelContenedorFriends.Location = new System.Drawing.Point(12, 196);
+            this.PanelContenedorFriends.Name = "PanelContenedorFriends";
+            this.PanelContenedorFriends.Size = new System.Drawing.Size(282, 305);
+            this.PanelContenedorFriends.TabIndex = 34;
+            // 
+            // friends10
+            // 
+            this.TransitionPanel.SetDecoration(this.friends10, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.friends10, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.friends10, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.friends10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.friends10.Location = new System.Drawing.Point(0, 657);
+            this.friends10.Name = "friends10";
+            this.friends10.Size = new System.Drawing.Size(282, 73);
+            this.friends10.TabIndex = 9;
+            // 
+            // friends9
+            // 
+            this.TransitionPanel.SetDecoration(this.friends9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.friends9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.friends9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.friends9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.friends9.Location = new System.Drawing.Point(0, 584);
+            this.friends9.Name = "friends9";
+            this.friends9.Size = new System.Drawing.Size(282, 73);
+            this.friends9.TabIndex = 8;
+            // 
+            // friends8
+            // 
+            this.TransitionPanel.SetDecoration(this.friends8, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.friends8, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.friends8, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.friends8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.friends8.Location = new System.Drawing.Point(0, 511);
+            this.friends8.Name = "friends8";
+            this.friends8.Size = new System.Drawing.Size(282, 73);
+            this.friends8.TabIndex = 7;
+            // 
+            // friends7
+            // 
+            this.TransitionPanel.SetDecoration(this.friends7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.friends7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.friends7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.friends7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.friends7.Location = new System.Drawing.Point(0, 438);
+            this.friends7.Name = "friends7";
+            this.friends7.Size = new System.Drawing.Size(282, 73);
+            this.friends7.TabIndex = 6;
+            // 
+            // friends6
+            // 
+            this.TransitionPanel.SetDecoration(this.friends6, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.friends6, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.friends6, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.friends6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.friends6.Location = new System.Drawing.Point(0, 365);
+            this.friends6.Name = "friends6";
+            this.friends6.Size = new System.Drawing.Size(282, 73);
+            this.friends6.TabIndex = 5;
+            // 
+            // friends5
+            // 
+            this.TransitionPanel.SetDecoration(this.friends5, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.friends5, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.friends5, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.friends5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.friends5.Location = new System.Drawing.Point(0, 292);
+            this.friends5.Name = "friends5";
+            this.friends5.Size = new System.Drawing.Size(282, 73);
+            this.friends5.TabIndex = 4;
+            // 
+            // friends4
+            // 
+            this.TransitionPanel.SetDecoration(this.friends4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.friends4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.friends4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.friends4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.friends4.Location = new System.Drawing.Point(0, 219);
+            this.friends4.Name = "friends4";
+            this.friends4.Size = new System.Drawing.Size(282, 73);
+            this.friends4.TabIndex = 3;
+            // 
+            // friends3
+            // 
+            this.TransitionPanel.SetDecoration(this.friends3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.friends3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.friends3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.friends3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.friends3.Location = new System.Drawing.Point(0, 146);
+            this.friends3.Name = "friends3";
+            this.friends3.Size = new System.Drawing.Size(282, 73);
+            this.friends3.TabIndex = 2;
+            // 
+            // friends2
+            // 
+            this.TransitionPanel.SetDecoration(this.friends2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.friends2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.friends2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.friends2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.friends2.Location = new System.Drawing.Point(0, 73);
+            this.friends2.Name = "friends2";
+            this.friends2.Size = new System.Drawing.Size(282, 73);
+            this.friends2.TabIndex = 1;
+            // 
+            // friends1
+            // 
+            this.TransitionPanel.SetDecoration(this.friends1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.friends1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.friends1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.friends1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.friends1.Location = new System.Drawing.Point(0, 0);
+            this.friends1.Name = "friends1";
+            this.friends1.Size = new System.Drawing.Size(282, 73);
+            this.friends1.TabIndex = 0;
+            // 
             // guna2Panel1
             // 
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -479,9 +578,9 @@
             // 
             this.PanelTopIzquierdo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelTopIzquierdo.Controls.Add(this.guna2Button3);
-            this.PanelTopIzquierdo.Controls.Add(this.guna2Button2);
-            this.PanelTopIzquierdo.Controls.Add(this.guna2Button1);
+            this.PanelTopIzquierdo.Controls.Add(this.BtnConfig);
+            this.PanelTopIzquierdo.Controls.Add(this.BtnCreateGroup);
+            this.PanelTopIzquierdo.Controls.Add(this.BtnAddFriend);
             this.PanelTopIzquierdo.Controls.Add(this.guna2CirclePictureBox1);
             this.PanelTopIzquierdo.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.PanelTopIzquierdo.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 1);
@@ -493,70 +592,72 @@
             this.PanelTopIzquierdo.Size = new System.Drawing.Size(297, 90);
             this.PanelTopIzquierdo.TabIndex = 1;
             // 
-            // guna2Button3
+            // BtnConfig
             // 
-            this.guna2Button3.BorderRadius = 5;
-            this.guna2Button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TransitionBtns.SetDecoration(this.guna2Button3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2Button3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.guna2Button3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(240, 25);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(51, 40);
-            this.guna2Button3.TabIndex = 2;
+            this.BtnConfig.BorderRadius = 5;
+            this.BtnConfig.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TransitionBtns.SetDecoration(this.BtnConfig, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.BtnConfig, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionPanel.SetDecoration(this.BtnConfig, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.BtnConfig.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnConfig.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnConfig.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnConfig.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnConfig.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
+            this.BtnConfig.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnConfig.ForeColor = System.Drawing.Color.White;
+            this.BtnConfig.Image = ((System.Drawing.Image)(resources.GetObject("BtnConfig.Image")));
+            this.BtnConfig.ImageSize = new System.Drawing.Size(30, 30);
+            this.BtnConfig.Location = new System.Drawing.Point(240, 25);
+            this.BtnConfig.Name = "BtnConfig";
+            this.BtnConfig.Size = new System.Drawing.Size(51, 40);
+            this.BtnConfig.TabIndex = 2;
             // 
-            // guna2Button2
+            // BtnCreateGroup
             // 
-            this.guna2Button2.BorderRadius = 5;
-            this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TransitionBtns.SetDecoration(this.guna2Button2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2Button2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.guna2Button2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button2.Location = new System.Drawing.Point(183, 25);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(51, 40);
-            this.guna2Button2.TabIndex = 1;
+            this.BtnCreateGroup.BorderRadius = 5;
+            this.BtnCreateGroup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TransitionBtns.SetDecoration(this.BtnCreateGroup, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.BtnCreateGroup, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionPanel.SetDecoration(this.BtnCreateGroup, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.BtnCreateGroup.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnCreateGroup.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnCreateGroup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnCreateGroup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnCreateGroup.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
+            this.BtnCreateGroup.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnCreateGroup.ForeColor = System.Drawing.Color.White;
+            this.BtnCreateGroup.Image = ((System.Drawing.Image)(resources.GetObject("BtnCreateGroup.Image")));
+            this.BtnCreateGroup.ImageSize = new System.Drawing.Size(30, 30);
+            this.BtnCreateGroup.Location = new System.Drawing.Point(183, 25);
+            this.BtnCreateGroup.Name = "BtnCreateGroup";
+            this.BtnCreateGroup.Size = new System.Drawing.Size(51, 40);
+            this.BtnCreateGroup.TabIndex = 1;
+            this.BtnCreateGroup.Click += new System.EventHandler(this.BtnCreateGroup_Click);
             // 
-            // guna2Button1
+            // BtnAddFriend
             // 
-            this.guna2Button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Button1.BackgroundImage")));
-            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TransitionBtns.SetDecoration(this.guna2Button1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2Button1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.guna2Button1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(126, 25);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(51, 40);
-            this.guna2Button1.TabIndex = 0;
+            this.BtnAddFriend.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAddFriend.BackgroundImage")));
+            this.BtnAddFriend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAddFriend.BorderRadius = 5;
+            this.BtnAddFriend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TransitionBtns.SetDecoration(this.BtnAddFriend, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.BtnAddFriend, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionPanel.SetDecoration(this.BtnAddFriend, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.BtnAddFriend.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnAddFriend.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnAddFriend.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnAddFriend.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnAddFriend.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
+            this.BtnAddFriend.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnAddFriend.ForeColor = System.Drawing.Color.White;
+            this.BtnAddFriend.Image = ((System.Drawing.Image)(resources.GetObject("BtnAddFriend.Image")));
+            this.BtnAddFriend.ImageSize = new System.Drawing.Size(30, 30);
+            this.BtnAddFriend.Location = new System.Drawing.Point(126, 25);
+            this.BtnAddFriend.Name = "BtnAddFriend";
+            this.BtnAddFriend.Size = new System.Drawing.Size(51, 40);
+            this.BtnAddFriend.TabIndex = 0;
+            this.BtnAddFriend.Click += new System.EventHandler(this.BtnAddFriend_Click);
             // 
             // guna2CirclePictureBox1
             // 
@@ -870,22 +971,10 @@
             // 
             this.PanelContenedorCentral.BackColor = System.Drawing.Color.White;
             this.PanelContenedorCentral.BorderThickness = 5;
+            this.PanelContenedorCentral.Controls.Add(this.myMessage1);
+            this.PanelContenedorCentral.Controls.Add(this.myMessage2);
+            this.PanelContenedorCentral.Controls.Add(this.youMessage1);
             this.PanelContenedorCentral.Controls.Add(this.guna2Panel2);
-            this.PanelContenedorCentral.Controls.Add(this.pictureBox1);
-            this.PanelContenedorCentral.Controls.Add(this.guna2HtmlLabel17);
-            this.PanelContenedorCentral.Controls.Add(this.guna2HtmlLabel18);
-            this.PanelContenedorCentral.Controls.Add(this.guna2HtmlLabel19);
-            this.PanelContenedorCentral.Controls.Add(this.guna2Button15);
-            this.PanelContenedorCentral.Controls.Add(this.guna2Button16);
-            this.PanelContenedorCentral.Controls.Add(this.guna2HtmlLabel14);
-            this.PanelContenedorCentral.Controls.Add(this.guna2HtmlLabel15);
-            this.PanelContenedorCentral.Controls.Add(this.guna2Button13);
-            this.PanelContenedorCentral.Controls.Add(this.guna2Button14);
-            this.PanelContenedorCentral.Controls.Add(this.guna2HtmlLabel13);
-            this.PanelContenedorCentral.Controls.Add(this.guna2HtmlLabel4);
-            this.PanelContenedorCentral.Controls.Add(this.guna2HtmlLabel3);
-            this.PanelContenedorCentral.Controls.Add(this.guna2Button6);
-            this.PanelContenedorCentral.Controls.Add(this.guna2Button9);
             this.PanelContenedorCentral.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.TransitionBtns.SetDecoration(this.PanelContenedorCentral, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Prueba.SetDecoration(this.PanelContenedorCentral, Guna.UI2.AnimatorNS.DecorationType.None);
@@ -895,6 +984,44 @@
             this.PanelContenedorCentral.Name = "PanelContenedorCentral";
             this.PanelContenedorCentral.Size = new System.Drawing.Size(514, 414);
             this.PanelContenedorCentral.TabIndex = 39;
+            // 
+            // myMessage1
+            // 
+            this.myMessage1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.myMessage1.AutoSize = true;
+            this.TransitionBtns.SetDecoration(this.myMessage1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.myMessage1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionPanel.SetDecoration(this.myMessage1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.myMessage1.Location = new System.Drawing.Point(44, 10);
+            this.myMessage1.Message = "Manuel Arturo Machado \r\n";
+            this.myMessage1.Name = "myMessage1";
+            this.myMessage1.Size = new System.Drawing.Size(426, 98);
+            this.myMessage1.TabIndex = 38;
+            // 
+            // myMessage2
+            // 
+            this.myMessage2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.myMessage2.AutoSize = true;
+            this.TransitionBtns.SetDecoration(this.myMessage2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.myMessage2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionPanel.SetDecoration(this.myMessage2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.myMessage2.Location = new System.Drawing.Point(44, 221);
+            this.myMessage2.Message = "Manuel Arturo Machado \r\n";
+            this.myMessage2.Name = "myMessage2";
+            this.myMessage2.Size = new System.Drawing.Size(426, 98);
+            this.myMessage2.TabIndex = 37;
+            // 
+            // youMessage1
+            // 
+            this.youMessage1.AutoSize = true;
+            this.TransitionBtns.SetDecoration(this.youMessage1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.youMessage1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionPanel.SetDecoration(this.youMessage1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.youMessage1.Location = new System.Drawing.Point(44, 114);
+            this.youMessage1.Message = "Manuel Arturo Machado \r\n";
+            this.youMessage1.Name = "youMessage1";
+            this.youMessage1.Size = new System.Drawing.Size(426, 98);
+            this.youMessage1.TabIndex = 36;
             // 
             // guna2Panel2
             // 
@@ -973,278 +1100,26 @@
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.TransitionPanel.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(435, 192);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 19);
-            this.pictureBox1.TabIndex = 31;
-            this.pictureBox1.TabStop = false;
-            // 
-            // guna2HtmlLabel17
-            // 
-            this.guna2HtmlLabel17.BackColor = System.Drawing.Color.White;
-            this.TransitionPanel.SetDecoration(this.guna2HtmlLabel17, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2HtmlLabel17, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.guna2HtmlLabel17, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel17.ForeColor = System.Drawing.Color.Gray;
-            this.guna2HtmlLabel17.Location = new System.Drawing.Point(31, 266);
-            this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
-            this.guna2HtmlLabel17.Size = new System.Drawing.Size(254, 18);
-            this.guna2HtmlLabel17.TabIndex = 29;
-            this.guna2HtmlLabel17.Text = "ddddddddddddddeeeeeeeeeeeeeeddd.";
-            // 
-            // guna2HtmlLabel18
-            // 
-            this.guna2HtmlLabel18.BackColor = System.Drawing.Color.White;
-            this.TransitionPanel.SetDecoration(this.guna2HtmlLabel18, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2HtmlLabel18, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.guna2HtmlLabel18, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
-            this.guna2HtmlLabel18.Location = new System.Drawing.Point(249, 291);
-            this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
-            this.guna2HtmlLabel18.Size = new System.Drawing.Size(55, 17);
-            this.guna2HtmlLabel18.TabIndex = 30;
-            this.guna2HtmlLabel18.Text = "2:00 pm";
-            // 
-            // guna2HtmlLabel19
-            // 
-            this.guna2HtmlLabel19.BackColor = System.Drawing.Color.White;
-            this.TransitionPanel.SetDecoration(this.guna2HtmlLabel19, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2HtmlLabel19, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.guna2HtmlLabel19, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
-            this.guna2HtmlLabel19.Location = new System.Drawing.Point(31, 241);
-            this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
-            this.guna2HtmlLabel19.Size = new System.Drawing.Size(90, 18);
-            this.guna2HtmlLabel19.TabIndex = 28;
-            this.guna2HtmlLabel19.Text = "Juan Alberto";
-            // 
-            // guna2Button15
-            // 
-            this.guna2Button15.AutoRoundedCorners = true;
-            this.guna2Button15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
-            this.guna2Button15.BorderRadius = 24;
-            this.guna2Button15.BorderThickness = 2;
-            this.TransitionBtns.SetDecoration(this.guna2Button15, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2Button15, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.guna2Button15, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Button15.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button15.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button15.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button15.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button15.FillColor = System.Drawing.Color.White;
-            this.guna2Button15.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button15.ForeColor = System.Drawing.Color.White;
-            this.guna2Button15.Location = new System.Drawing.Point(280, 220);
-            this.guna2Button15.Name = "guna2Button15";
-            this.guna2Button15.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button15.TabIndex = 26;
-            // 
-            // guna2Button16
-            // 
-            this.guna2Button16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(172)))), ((int)(((byte)(206)))));
-            this.guna2Button16.BorderRadius = 5;
-            this.guna2Button16.BorderThickness = 2;
-            this.TransitionBtns.SetDecoration(this.guna2Button16, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2Button16, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.guna2Button16, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Button16.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button16.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button16.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button16.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button16.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button16.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button16.ForeColor = System.Drawing.Color.White;
-            this.guna2Button16.Location = new System.Drawing.Point(24, 238);
-            this.guna2Button16.Name = "guna2Button16";
-            this.guna2Button16.Size = new System.Drawing.Size(284, 76);
-            this.guna2Button16.TabIndex = 27;
-            // 
-            // guna2HtmlLabel14
-            // 
-            this.guna2HtmlLabel14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2HtmlLabel14.BackColor = System.Drawing.Color.White;
-            this.TransitionPanel.SetDecoration(this.guna2HtmlLabel14, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2HtmlLabel14, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.guna2HtmlLabel14, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel14.ForeColor = System.Drawing.Color.Gray;
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(191, 162);
-            this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
-            this.guna2HtmlLabel14.Size = new System.Drawing.Size(254, 18);
-            this.guna2HtmlLabel14.TabIndex = 24;
-            this.guna2HtmlLabel14.Text = "ddddddddddddddeeeeeeeeeeeeeeddd.";
-            // 
-            // guna2HtmlLabel15
-            // 
-            this.guna2HtmlLabel15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2HtmlLabel15.BackColor = System.Drawing.Color.White;
-            this.TransitionPanel.SetDecoration(this.guna2HtmlLabel15, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2HtmlLabel15, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.guna2HtmlLabel15, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(379, 194);
-            this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            this.guna2HtmlLabel15.Size = new System.Drawing.Size(55, 17);
-            this.guna2HtmlLabel15.TabIndex = 25;
-            this.guna2HtmlLabel15.Text = "2:00 pm";
-            // 
-            // guna2Button13
-            // 
-            this.guna2Button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button13.AutoRoundedCorners = true;
-            this.guna2Button13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
-            this.guna2Button13.BorderRadius = 24;
-            this.guna2Button13.BorderThickness = 2;
-            this.TransitionBtns.SetDecoration(this.guna2Button13, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2Button13, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.guna2Button13, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button13.FillColor = System.Drawing.Color.White;
-            this.guna2Button13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button13.ForeColor = System.Drawing.Color.White;
-            this.guna2Button13.Location = new System.Drawing.Point(440, 122);
-            this.guna2Button13.Name = "guna2Button13";
-            this.guna2Button13.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button13.TabIndex = 21;
-            // 
-            // guna2Button14
-            // 
-            this.guna2Button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(185)))), ((int)(((byte)(223)))));
-            this.guna2Button14.BorderRadius = 5;
-            this.guna2Button14.BorderThickness = 2;
-            this.TransitionBtns.SetDecoration(this.guna2Button14, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2Button14, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.guna2Button14, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Button14.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button14.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button14.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button14.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button14.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button14.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button14.ForeColor = System.Drawing.Color.White;
-            this.guna2Button14.Location = new System.Drawing.Point(184, 140);
-            this.guna2Button14.Name = "guna2Button14";
-            this.guna2Button14.Size = new System.Drawing.Size(284, 76);
-            this.guna2Button14.TabIndex = 22;
-            // 
-            // guna2HtmlLabel13
-            // 
-            this.guna2HtmlLabel13.BackColor = System.Drawing.Color.White;
-            this.TransitionPanel.SetDecoration(this.guna2HtmlLabel13, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2HtmlLabel13, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.guna2HtmlLabel13, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.Gray;
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(31, 69);
-            this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(254, 18);
-            this.guna2HtmlLabel13.TabIndex = 20;
-            this.guna2HtmlLabel13.Text = "ddddddddddddddeeeeeeeeeeeeeeddd.";
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.White;
-            this.TransitionPanel.SetDecoration(this.guna2HtmlLabel4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2HtmlLabel4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.guna2HtmlLabel4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(453, 93);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(55, 17);
-            this.guna2HtmlLabel4.TabIndex = 20;
-            this.guna2HtmlLabel4.Text = "2:00 pm";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.White;
-            this.TransitionPanel.SetDecoration(this.guna2HtmlLabel3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2HtmlLabel3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.guna2HtmlLabel3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(31, 44);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(90, 18);
-            this.guna2HtmlLabel3.TabIndex = 19;
-            this.guna2HtmlLabel3.Text = "Juan Alberto";
-            // 
-            // guna2Button6
-            // 
-            this.guna2Button6.AutoRoundedCorners = true;
-            this.guna2Button6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
-            this.guna2Button6.BorderRadius = 24;
-            this.guna2Button6.BorderThickness = 2;
-            this.TransitionBtns.SetDecoration(this.guna2Button6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2Button6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.guna2Button6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.White;
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Location = new System.Drawing.Point(480, 24);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button6.TabIndex = 3;
-            // 
-            // guna2Button9
-            // 
-            this.guna2Button9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(172)))), ((int)(((byte)(206)))));
-            this.guna2Button9.BorderRadius = 5;
-            this.guna2Button9.BorderThickness = 2;
-            this.TransitionBtns.SetDecoration(this.guna2Button9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2Button9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.guna2Button9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button9.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button9.ForeColor = System.Drawing.Color.White;
-            this.guna2Button9.Location = new System.Drawing.Point(24, 41);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.Size = new System.Drawing.Size(492, 76);
-            this.guna2Button9.TabIndex = 6;
-            // 
             // TransitionBtns
             // 
             this.TransitionBtns.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Scale;
             this.TransitionBtns.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.TransitionBtns.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.TransitionBtns.DefaultAnimation = animation1;
             // 
             // Prueba
             // 
@@ -1267,136 +1142,26 @@
             animation2.TransparencyCoeff = 0F;
             this.Prueba.DefaultAnimation = animation2;
             // 
-            // friends10
-            // 
-            this.TransitionPanel.SetDecoration(this.friends10, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends10, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends10, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends10.Location = new System.Drawing.Point(0, 657);
-            this.friends10.Name = "friends10";
-            this.friends10.Size = new System.Drawing.Size(282, 73);
-            this.friends10.TabIndex = 9;
-            // 
-            // friends9
-            // 
-            this.TransitionPanel.SetDecoration(this.friends9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends9.Location = new System.Drawing.Point(0, 584);
-            this.friends9.Name = "friends9";
-            this.friends9.Size = new System.Drawing.Size(282, 73);
-            this.friends9.TabIndex = 8;
-            // 
-            // friends8
-            // 
-            this.TransitionPanel.SetDecoration(this.friends8, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends8, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends8, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends8.Location = new System.Drawing.Point(0, 511);
-            this.friends8.Name = "friends8";
-            this.friends8.Size = new System.Drawing.Size(282, 73);
-            this.friends8.TabIndex = 7;
-            // 
-            // friends7
-            // 
-            this.TransitionPanel.SetDecoration(this.friends7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends7.Location = new System.Drawing.Point(0, 438);
-            this.friends7.Name = "friends7";
-            this.friends7.Size = new System.Drawing.Size(282, 73);
-            this.friends7.TabIndex = 6;
-            // 
-            // friends6
-            // 
-            this.TransitionPanel.SetDecoration(this.friends6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends6.Location = new System.Drawing.Point(0, 365);
-            this.friends6.Name = "friends6";
-            this.friends6.Size = new System.Drawing.Size(282, 73);
-            this.friends6.TabIndex = 5;
-            // 
-            // friends5
-            // 
-            this.TransitionPanel.SetDecoration(this.friends5, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends5, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends5, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends5.Location = new System.Drawing.Point(0, 292);
-            this.friends5.Name = "friends5";
-            this.friends5.Size = new System.Drawing.Size(282, 73);
-            this.friends5.TabIndex = 4;
-            // 
-            // friends4
-            // 
-            this.TransitionPanel.SetDecoration(this.friends4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends4.Location = new System.Drawing.Point(0, 219);
-            this.friends4.Name = "friends4";
-            this.friends4.Size = new System.Drawing.Size(282, 73);
-            this.friends4.TabIndex = 3;
-            // 
-            // friends3
-            // 
-            this.TransitionPanel.SetDecoration(this.friends3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends3.Location = new System.Drawing.Point(0, 146);
-            this.friends3.Name = "friends3";
-            this.friends3.Size = new System.Drawing.Size(282, 73);
-            this.friends3.TabIndex = 2;
-            // 
-            // friends2
-            // 
-            this.TransitionPanel.SetDecoration(this.friends2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends2.Location = new System.Drawing.Point(0, 73);
-            this.friends2.Name = "friends2";
-            this.friends2.Size = new System.Drawing.Size(282, 73);
-            this.friends2.TabIndex = 1;
-            // 
-            // friends1
-            // 
-            this.TransitionPanel.SetDecoration(this.friends1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends1.Location = new System.Drawing.Point(0, 0);
-            this.friends1.Name = "friends1";
-            this.friends1.Size = new System.Drawing.Size(282, 73);
-            this.friends1.TabIndex = 0;
-            // 
             // TransitionPanel
             // 
             this.TransitionPanel.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.TransitionPanel.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.TransitionPanel.DefaultAnimation = animation1;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.TransitionPanel.DefaultAnimation = animation3;
             // 
             // AppChat
             // 
@@ -1416,13 +1181,13 @@
             this.Text = "AppChat";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.PanelContenedorIzquierdo.ResumeLayout(false);
-            this.PanelContenedorFriends.ResumeLayout(false);
             this.PanelMiPerfil.ResumeLayout(false);
             this.PanelMiPerfil.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.PanelContenedorFriends.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.PanelTopIzquierdo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
@@ -1440,7 +1205,6 @@
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictux4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1455,21 +1219,10 @@
         private Guna.UI2.WinForms.Guna2Button BtnAll;
         private Guna.UI2.WinForms.Guna2Transition TransitionBtns;
         private Guna.UI2.WinForms.Guna2Panel PanelTopIzquierdo;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button BtnConfig;
+        private Guna.UI2.WinForms.Guna2Button BtnCreateGroup;
+        private Guna.UI2.WinForms.Guna2Button BtnAddFriend;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2Panel PanelMiPerfil;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        public Guna.UI2.WinForms.Guna2HtmlLabel UserId;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         private Guna.UI2.WinForms.Guna2Transition Prueba;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
@@ -1492,21 +1245,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private System.Windows.Forms.PictureBox pictux4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
-        private Guna.UI2.WinForms.Guna2Button guna2Button15;
-        private Guna.UI2.WinForms.Guna2Button guna2Button16;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
-        private Guna.UI2.WinForms.Guna2Button guna2Button13;
-        private Guna.UI2.WinForms.Guna2Button guna2Button14;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button9;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Panel PanelContenedorFriends;
@@ -1521,5 +1259,20 @@
         private Components.Friends friends6;
         private Components.Friends friends5;
         private Guna.UI2.WinForms.Guna2Transition TransitionPanel;
+        private Guna.UI2.WinForms.Guna2Panel PanelMiPerfil;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        public Guna.UI2.WinForms.Guna2HtmlLabel UserId;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Messages.MyMessage myMessage1;
+        private Messages.MyMessage myMessage2;
+        private Messages.YouMessage youMessage1;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

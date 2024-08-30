@@ -433,6 +433,7 @@
     <Compile Include="Components\Friends.Designer.cs">
       <DependentUpon>Friends.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estados\EstadoModal.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -451,16 +452,40 @@
     <Compile Include="Messages\YouMessage.Designer.cs">
       <DependentUpon>YouMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modals\ModalAddFriend.cs">
+    <Compile Include="Modal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal.Designer.cs">
+      <DependentUpon>Modal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modals\AddFriend\Modal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modals\AddFriend\Modal.Designer.cs">
+      <DependentUpon>Modal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modals\AddFriend\ModalAddFriend.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modals\ModalAddFriend.Designer.cs">
+    <Compile Include="Modals\AddFriend\ModalAddFriend.Designer.cs">
       <DependentUpon>ModalAddFriend.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modals\ModalCreateGroup.cs">
+    <Compile Include="Modals\AddFriend\Prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modals\AddFriend\Prueba.Designer.cs">
+      <DependentUpon>Prueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modals\CreateGroup\Modal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modals\CreateGroup\Modal.Designer.cs">
+      <DependentUpon>Modal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modals\CreateGroup\ModalCreateGroup.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modals\ModalCreateGroup.Designer.cs">
+    <Compile Include="Modals\CreateGroup\ModalCreateGroup.Designer.cs">
       <DependentUpon>ModalCreateGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -486,10 +511,22 @@
     <EmbeddedResource Include="Messages\YouMessage.resx">
       <DependentUpon>YouMessage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modals\ModalAddFriend.resx">
+    <EmbeddedResource Include="Modal.resx">
+      <DependentUpon>Modal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modals\AddFriend\Modal.resx">
+      <DependentUpon>Modal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modals\AddFriend\ModalAddFriend.resx">
       <DependentUpon>ModalAddFriend.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modals\ModalCreateGroup.resx">
+    <EmbeddedResource Include="Modals\AddFriend\Prueba.resx">
+      <DependentUpon>Prueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modals\CreateGroup\Modal.resx">
+      <DependentUpon>Modal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modals\CreateGroup\ModalCreateGroup.resx">
       <DependentUpon>ModalCreateGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />

@@ -34,24 +34,19 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.TxtCompleteName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.TxtUserId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.BtnBuscar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.ContenedorSolicitudes = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.PtbImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.BtnSendRequest = new Guna.UI2.WinForms.Guna2Button();
+            this.LblNameUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.acept4 = new MessaGo_Desktop.Components_Users.Acept();
-            this.acept3 = new MessaGo_Desktop.Components_Users.Acept();
-            this.acept2 = new MessaGo_Desktop.Components_Users.Acept();
-            this.acept1 = new MessaGo_Desktop.Components_Users.Acept();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbImage)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,46 +85,47 @@
             this.guna2Separator1.Size = new System.Drawing.Size(307, 10);
             this.guna2Separator1.TabIndex = 1;
             // 
-            // TxtCompleteName
+            // TxtUserId
             // 
-            this.TxtCompleteName.Animated = true;
-            this.TxtCompleteName.BorderThickness = 0;
-            this.TxtCompleteName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtCompleteName.DefaultText = "";
-            this.TxtCompleteName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtCompleteName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtCompleteName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtCompleteName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtCompleteName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtCompleteName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCompleteName.ForeColor = System.Drawing.Color.DarkGray;
-            this.TxtCompleteName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtCompleteName.IconRight = ((System.Drawing.Image)(resources.GetObject("TxtCompleteName.IconRight")));
-            this.TxtCompleteName.Location = new System.Drawing.Point(29, 164);
-            this.TxtCompleteName.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtCompleteName.Name = "TxtCompleteName";
-            this.TxtCompleteName.PasswordChar = '\0';
-            this.TxtCompleteName.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.TxtCompleteName.PlaceholderText = "Complete name";
-            this.TxtCompleteName.SelectedText = "";
-            this.TxtCompleteName.Size = new System.Drawing.Size(307, 35);
-            this.TxtCompleteName.TabIndex = 11;
+            this.TxtUserId.Animated = true;
+            this.TxtUserId.BorderThickness = 0;
+            this.TxtUserId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtUserId.DefaultText = "";
+            this.TxtUserId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TxtUserId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TxtUserId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtUserId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtUserId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtUserId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtUserId.ForeColor = System.Drawing.Color.DarkGray;
+            this.TxtUserId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtUserId.IconRight = ((System.Drawing.Image)(resources.GetObject("TxtUserId.IconRight")));
+            this.TxtUserId.Location = new System.Drawing.Point(29, 164);
+            this.TxtUserId.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtUserId.Name = "TxtUserId";
+            this.TxtUserId.PasswordChar = '\0';
+            this.TxtUserId.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.TxtUserId.PlaceholderText = "Complete name";
+            this.TxtUserId.SelectedText = "";
+            this.TxtUserId.Size = new System.Drawing.Size(307, 35);
+            this.TxtUserId.TabIndex = 11;
             // 
-            // guna2Button1
+            // BtnBuscar
             // 
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(172)))), ((int)(((byte)(206)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(62, 233);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(240, 45);
-            this.guna2Button1.TabIndex = 12;
-            this.guna2Button1.Text = "Search";
+            this.BtnBuscar.BorderRadius = 5;
+            this.BtnBuscar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnBuscar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnBuscar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnBuscar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnBuscar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(172)))), ((int)(((byte)(206)))));
+            this.BtnBuscar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscar.ForeColor = System.Drawing.Color.White;
+            this.BtnBuscar.Location = new System.Drawing.Point(62, 233);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(240, 45);
+            this.BtnBuscar.TabIndex = 12;
+            this.BtnBuscar.Text = "Search";
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // guna2VSeparator1
             // 
@@ -140,16 +136,12 @@
             this.guna2VSeparator1.Size = new System.Drawing.Size(10, 252);
             this.guna2VSeparator1.TabIndex = 15;
             // 
-            // guna2Panel3
+            // ContenedorSolicitudes
             // 
-            this.guna2Panel3.Controls.Add(this.acept4);
-            this.guna2Panel3.Controls.Add(this.acept3);
-            this.guna2Panel3.Controls.Add(this.acept2);
-            this.guna2Panel3.Controls.Add(this.acept1);
-            this.guna2Panel3.Location = new System.Drawing.Point(411, 115);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(255, 252);
-            this.guna2Panel3.TabIndex = 16;
+            this.ContenedorSolicitudes.Location = new System.Drawing.Point(411, 115);
+            this.ContenedorSolicitudes.Name = "ContenedorSolicitudes";
+            this.ContenedorSolicitudes.Size = new System.Drawing.Size(255, 252);
+            this.ContenedorSolicitudes.TabIndex = 16;
             // 
             // guna2Panel4
             // 
@@ -158,7 +150,7 @@
             this.guna2Panel4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(172)))), ((int)(((byte)(206)))));
             this.guna2Panel4.BorderRadius = 23;
             this.guna2Panel4.BorderThickness = 1;
-            this.guna2Panel4.Controls.Add(this.guna2CirclePictureBox1);
+            this.guna2Panel4.Controls.Add(this.PtbImage);
             this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(185)))), ((int)(((byte)(223)))));
             this.guna2Panel4.Location = new System.Drawing.Point(4, 1);
             this.guna2Panel4.Name = "guna2Panel4";
@@ -166,26 +158,26 @@
             this.guna2Panel4.Size = new System.Drawing.Size(38, 38);
             this.guna2Panel4.TabIndex = 36;
             // 
-            // guna2CirclePictureBox1
+            // PtbImage
             // 
-            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 4;
-            this.guna2CirclePictureBox1.TabStop = false;
-            this.guna2CirclePictureBox1.UseTransparentBackground = true;
+            this.PtbImage.BackColor = System.Drawing.Color.Transparent;
+            this.PtbImage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PtbImage.Image = ((System.Drawing.Image)(resources.GetObject("PtbImage.Image")));
+            this.PtbImage.ImageRotate = 0F;
+            this.PtbImage.Location = new System.Drawing.Point(3, 3);
+            this.PtbImage.Name = "PtbImage";
+            this.PtbImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.PtbImage.Size = new System.Drawing.Size(32, 32);
+            this.PtbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PtbImage.TabIndex = 4;
+            this.PtbImage.TabStop = false;
+            this.PtbImage.UseTransparentBackground = true;
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BorderRadius = 5;
-            this.guna2Panel2.Controls.Add(this.guna2Button5);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel2.Controls.Add(this.BtnSendRequest);
+            this.guna2Panel2.Controls.Add(this.LblNameUser);
             this.guna2Panel2.Controls.Add(this.guna2Panel4);
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(185)))), ((int)(((byte)(223)))));
             this.guna2Panel2.Location = new System.Drawing.Point(29, 309);
@@ -193,36 +185,37 @@
             this.guna2Panel2.Size = new System.Drawing.Size(307, 39);
             this.guna2Panel2.TabIndex = 14;
             // 
-            // guna2Button5
+            // BtnSendRequest
             // 
-            this.guna2Button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(185)))), ((int)(((byte)(223)))));
-            this.guna2Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Button5.BorderRadius = 5;
-            this.guna2Button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
-            this.guna2Button5.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button5.Location = new System.Drawing.Point(260, 1);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(42, 36);
-            this.guna2Button5.TabIndex = 17;
+            this.BtnSendRequest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(185)))), ((int)(((byte)(223)))));
+            this.BtnSendRequest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSendRequest.BorderRadius = 5;
+            this.BtnSendRequest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSendRequest.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnSendRequest.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnSendRequest.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnSendRequest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnSendRequest.FillColor = System.Drawing.Color.Transparent;
+            this.BtnSendRequest.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnSendRequest.ForeColor = System.Drawing.Color.White;
+            this.BtnSendRequest.Image = ((System.Drawing.Image)(resources.GetObject("BtnSendRequest.Image")));
+            this.BtnSendRequest.ImageSize = new System.Drawing.Size(30, 30);
+            this.BtnSendRequest.Location = new System.Drawing.Point(260, 1);
+            this.BtnSendRequest.Name = "BtnSendRequest";
+            this.BtnSendRequest.Size = new System.Drawing.Size(42, 36);
+            this.BtnSendRequest.TabIndex = 17;
+            this.BtnSendRequest.Click += new System.EventHandler(this.BtnSendRequest_Click);
             // 
-            // guna2HtmlLabel1
+            // LblNameUser
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(48, 8);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(127, 23);
-            this.guna2HtmlLabel1.TabIndex = 36;
-            this.guna2HtmlLabel1.Text = "Add new friends";
+            this.LblNameUser.BackColor = System.Drawing.Color.Transparent;
+            this.LblNameUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNameUser.ForeColor = System.Drawing.Color.White;
+            this.LblNameUser.Location = new System.Drawing.Point(48, 8);
+            this.LblNameUser.Name = "LblNameUser";
+            this.LblNameUser.Size = new System.Drawing.Size(127, 23);
+            this.LblNameUser.TabIndex = 36;
+            this.LblNameUser.Text = "Add new friends";
             // 
             // guna2HtmlLabel2
             // 
@@ -235,61 +228,25 @@
             this.guna2HtmlLabel2.TabIndex = 36;
             this.guna2HtmlLabel2.Text = "Add new friends";
             // 
-            // acept4
-            // 
-            this.acept4.BackColor = System.Drawing.Color.White;
-            this.acept4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.acept4.Location = new System.Drawing.Point(0, 159);
-            this.acept4.Name = "acept4";
-            this.acept4.Size = new System.Drawing.Size(255, 53);
-            this.acept4.TabIndex = 3;
-            // 
-            // acept3
-            // 
-            this.acept3.BackColor = System.Drawing.Color.White;
-            this.acept3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.acept3.Location = new System.Drawing.Point(0, 106);
-            this.acept3.Name = "acept3";
-            this.acept3.Size = new System.Drawing.Size(255, 53);
-            this.acept3.TabIndex = 2;
-            // 
-            // acept2
-            // 
-            this.acept2.BackColor = System.Drawing.Color.White;
-            this.acept2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.acept2.Location = new System.Drawing.Point(0, 53);
-            this.acept2.Name = "acept2";
-            this.acept2.Size = new System.Drawing.Size(255, 53);
-            this.acept2.TabIndex = 1;
-            // 
-            // acept1
-            // 
-            this.acept1.BackColor = System.Drawing.Color.White;
-            this.acept1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.acept1.Location = new System.Drawing.Point(0, 0);
-            this.acept1.Name = "acept1";
-            this.acept1.Size = new System.Drawing.Size(255, 53);
-            this.acept1.TabIndex = 0;
-            // 
             // ModalAddFriend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.guna2Panel3);
+            this.Controls.Add(this.ContenedorSolicitudes);
             this.Controls.Add(this.guna2VSeparator1);
             this.Controls.Add(this.guna2Panel2);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.TxtCompleteName);
+            this.Controls.Add(this.BtnBuscar);
+            this.Controls.Add(this.TxtUserId);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "ModalAddFriend";
             this.Size = new System.Drawing.Size(679, 379);
+            this.Load += new System.EventHandler(this.ModalAddFriend_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbImage)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -302,19 +259,15 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private Guna.UI2.WinForms.Guna2TextBox TxtCompleteName;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2TextBox TxtUserId;
+        private Guna.UI2.WinForms.Guna2Button BtnBuscar;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Panel ContenedorSolicitudes;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LblNameUser;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox PtbImage;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Components_Users.Acept acept4;
-        private Components_Users.Acept acept3;
-        private Components_Users.Acept acept2;
-        private Components_Users.Acept acept1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button BtnSendRequest;
     }
 }

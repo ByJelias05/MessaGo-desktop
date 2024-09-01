@@ -31,9 +31,9 @@ namespace MessaGo_Desktop
                 TransitionBtns.HideSync(BtnAll);
                 TransitionBtns.HideSync(BtnNoRead);
                 TransitionBtns.HideSync(BtnGroups);
-                //TransitionBtns.HideSync(b1);
-                //TransitionBtns.HideSync(b2);
-                //TransitionBtns.HideSync(b3);
+                TransitionBtns.HideSync(BtnAddFriend);
+                TransitionBtns.HideSync(BtnCreateGroup);
+                TransitionBtns.HideSync(BtnConfig);
                 //TransitionBtns.HideSync(b4);
               
 
@@ -55,7 +55,10 @@ namespace MessaGo_Desktop
             TransitionBtns.ShowSync(BtnGroups);
             TransitionBtns.ShowSync(BtnNoRead);
             TransitionBtns.ShowSync(BtnAll);
-           
+            TransitionBtns.ShowSync(BtnAddFriend);
+            TransitionBtns.ShowSync(BtnCreateGroup);
+            TransitionBtns.ShowSync(BtnConfig);
+
         }
 
         public bool EstadoVerYouPerfil;
@@ -131,6 +134,13 @@ namespace MessaGo_Desktop
                 Modal.ShowDialog();
                 Sombra.Dispose();
             }
+        }
+
+        private void guna2HtmlLabel7_Click(object sender, EventArgs e)
+        {
+            string miInfo = Estados.MyPerfil.Nombre +  Estados.MyPerfil.UserId + Estados.MyPerfil.PhotoUrl;
+
+            MessageBox.Show(miInfo);
         }
     }
 }

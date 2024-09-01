@@ -414,6 +414,8 @@
     <Compile Include="AppChat.Designer.cs">
       <DependentUpon>AppChat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Collections\Conversacion.cs" />
+    <Compile Include="Collections\Solicitud.cs" />
     <Compile Include="Collections\Usuarios.cs" />
     <Compile Include="Components Users\Acept.cs">
       <SubType>UserControl</SubType>
@@ -434,6 +436,7 @@
       <DependentUpon>Friends.cs</DependentUpon>
     </Compile>
     <Compile Include="Estados\EstadoModal.cs" />
+    <Compile Include="Estados\MyPerfil.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

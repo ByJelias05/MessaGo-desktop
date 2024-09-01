@@ -100,6 +100,7 @@ namespace MessaGo_Desktop
         private void BtnNo_Click(object sender, EventArgs e)
         {
             PanelHelp.Visible = false;
+
         }
 
         private async void BtnCreateUSer_Click(object sender, EventArgs e)
@@ -140,6 +141,10 @@ namespace MessaGo_Desktop
                {
                     AppChat app = new AppChat();
                     app.UserId.Text = us.UserID.ToString();
+                    Estados.MyPerfil.DocID = us.ID;
+                    Estados.MyPerfil.Nombre = us.CompleteName;
+                    Estados.MyPerfil.UserId = us.UserID;
+                    Estados.MyPerfil.PhotoUrl = us.PhotoUrl;
                     app.Show();
                     this.Hide();
                }

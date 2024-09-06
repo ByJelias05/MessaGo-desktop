@@ -27,11 +27,11 @@ namespace MessaGo_Desktop.Messages
         {
             get
             {
-                return label1.Text;
+                return LblMensaje.Text;
             }
             set
             {
-                label1.Text = value;
+                LblMensaje.Text = value;
             }
         }
 

@@ -47,7 +47,7 @@
             // 
             // guna2Panel4
             // 
-            this.guna2Panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.guna2Panel4.BackColor = System.Drawing.Color.White;
             this.guna2Panel4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
             this.guna2Panel4.BorderRadius = 23;
@@ -77,10 +77,7 @@
             // 
             // BoxMensaje
             // 
-            this.BoxMensaje.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BoxMensaje.AutoSize = true;
+            this.BoxMensaje.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.BoxMensaje.BackColor = System.Drawing.Color.White;
             this.BoxMensaje.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(172)))), ((int)(((byte)(206)))));
             this.BoxMensaje.BorderRadius = 5;
@@ -181,7 +178,6 @@
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

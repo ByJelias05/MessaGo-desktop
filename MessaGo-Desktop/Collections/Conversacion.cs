@@ -10,6 +10,9 @@ namespace MessaGo_Desktop.Collections
     [FirestoreData]
     public class Conversacion
     {
+        [FirestoreProperty]
+        public string IdDoc {  get; set; }  
+
         //MyInfo
         [FirestoreProperty]
         public string MyUserId { get; set; }

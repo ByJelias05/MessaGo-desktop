@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation6 = new Guna.UI2.AnimatorNS.Animation();
-            Guna.UI2.AnimatorNS.Animation animation5 = new Guna.UI2.AnimatorNS.Animation();
-            Guna.UI2.AnimatorNS.Animation animation4 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppChat));
+            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
             this.PanelContenedorIzquierdo = new Guna.UI2.WinForms.Guna2Panel();
             this.PanelMiPerfil = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
@@ -46,16 +46,6 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.PanelContenedorFriends = new Guna.UI2.WinForms.Guna2Panel();
-            this.friends10 = new MessaGo_Desktop.Components.Friends();
-            this.friends9 = new MessaGo_Desktop.Components.Friends();
-            this.friends8 = new MessaGo_Desktop.Components.Friends();
-            this.friends7 = new MessaGo_Desktop.Components.Friends();
-            this.friends6 = new MessaGo_Desktop.Components.Friends();
-            this.friends5 = new MessaGo_Desktop.Components.Friends();
-            this.friends4 = new MessaGo_Desktop.Components.Friends();
-            this.friends3 = new MessaGo_Desktop.Components.Friends();
-            this.friends2 = new MessaGo_Desktop.Components.Friends();
-            this.friends1 = new MessaGo_Desktop.Components.Friends();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -83,26 +73,24 @@
             this.BtnMinimizer = new Guna.UI2.WinForms.Guna2Button();
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LblNombreHablante = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CirclePictureBox7 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.PanelContenedorCentral = new Guna.UI2.WinForms.Guna2Panel();
-            this.myMessage1 = new MessaGo_Desktop.Messages.MyMessage();
-            this.myMessage2 = new MessaGo_Desktop.Messages.MyMessage();
-            this.youMessage1 = new MessaGo_Desktop.Messages.YouMessage();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pictux4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Prueba = new Guna.UI2.WinForms.Guna2Transition();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.TransitionBtns = new Guna.UI2.WinForms.Guna2Transition();
             this.TransitionPanel = new Guna.UI2.WinForms.Guna2Transition();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.BtnEnviar = new System.Windows.Forms.PictureBox();
+            this.TxtMensje = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.PanelContenedorCentral = new Guna.UI2.WinForms.Guna2Panel();
             this.PanelContenedorIzquierdo.SuspendLayout();
             this.PanelMiPerfil.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
-            this.PanelContenedorFriends.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.PanelTopIzquierdo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -112,10 +100,9 @@
             this.pp.SuspendLayout();
             this.PanelContenedorSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox7)).BeginInit();
-            this.PanelContenedorCentral.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictux4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnEnviar)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelContenedorIzquierdo
@@ -154,7 +141,7 @@
             this.PanelMiPerfil.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMiPerfil.Location = new System.Drawing.Point(0, 0);
             this.PanelMiPerfil.Name = "PanelMiPerfil";
-            this.PanelMiPerfil.Size = new System.Drawing.Size(296, 504);
+            this.PanelMiPerfil.Size = new System.Drawing.Size(17, 504);
             this.PanelMiPerfil.TabIndex = 33;
             this.PanelMiPerfil.Visible = false;
             // 
@@ -253,7 +240,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 443);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(296, 61);
+            this.panel2.Size = new System.Drawing.Size(17, 61);
             this.panel2.TabIndex = 6;
             // 
             // panel1
@@ -267,7 +254,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(296, 90);
+            this.panel1.Size = new System.Drawing.Size(17, 90);
             this.panel1.TabIndex = 5;
             // 
             // guna2HtmlLabel1
@@ -308,16 +295,6 @@
             this.PanelContenedorFriends.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelContenedorFriends.Controls.Add(this.friends10);
-            this.PanelContenedorFriends.Controls.Add(this.friends9);
-            this.PanelContenedorFriends.Controls.Add(this.friends8);
-            this.PanelContenedorFriends.Controls.Add(this.friends7);
-            this.PanelContenedorFriends.Controls.Add(this.friends6);
-            this.PanelContenedorFriends.Controls.Add(this.friends5);
-            this.PanelContenedorFriends.Controls.Add(this.friends4);
-            this.PanelContenedorFriends.Controls.Add(this.friends3);
-            this.PanelContenedorFriends.Controls.Add(this.friends2);
-            this.PanelContenedorFriends.Controls.Add(this.friends1);
             this.Prueba.SetDecoration(this.PanelContenedorFriends, Guna.UI2.AnimatorNS.DecorationType.None);
             this.TransitionBtns.SetDecoration(this.PanelContenedorFriends, Guna.UI2.AnimatorNS.DecorationType.None);
             this.TransitionPanel.SetDecoration(this.PanelContenedorFriends, Guna.UI2.AnimatorNS.DecorationType.None);
@@ -325,116 +302,7 @@
             this.PanelContenedorFriends.Name = "PanelContenedorFriends";
             this.PanelContenedorFriends.Size = new System.Drawing.Size(282, 305);
             this.PanelContenedorFriends.TabIndex = 34;
-            // 
-            // friends10
-            // 
-            this.TransitionPanel.SetDecoration(this.friends10, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends10, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends10, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends10.Location = new System.Drawing.Point(0, 657);
-            this.friends10.Name = "friends10";
-            this.friends10.Size = new System.Drawing.Size(282, 73);
-            this.friends10.TabIndex = 9;
-            // 
-            // friends9
-            // 
-            this.TransitionPanel.SetDecoration(this.friends9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends9.Location = new System.Drawing.Point(0, 584);
-            this.friends9.Name = "friends9";
-            this.friends9.Size = new System.Drawing.Size(282, 73);
-            this.friends9.TabIndex = 8;
-            // 
-            // friends8
-            // 
-            this.TransitionPanel.SetDecoration(this.friends8, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends8, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends8, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends8.Location = new System.Drawing.Point(0, 511);
-            this.friends8.Name = "friends8";
-            this.friends8.Size = new System.Drawing.Size(282, 73);
-            this.friends8.TabIndex = 7;
-            // 
-            // friends7
-            // 
-            this.TransitionPanel.SetDecoration(this.friends7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends7.Location = new System.Drawing.Point(0, 438);
-            this.friends7.Name = "friends7";
-            this.friends7.Size = new System.Drawing.Size(282, 73);
-            this.friends7.TabIndex = 6;
-            // 
-            // friends6
-            // 
-            this.TransitionPanel.SetDecoration(this.friends6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends6.Location = new System.Drawing.Point(0, 365);
-            this.friends6.Name = "friends6";
-            this.friends6.Size = new System.Drawing.Size(282, 73);
-            this.friends6.TabIndex = 5;
-            // 
-            // friends5
-            // 
-            this.TransitionPanel.SetDecoration(this.friends5, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends5, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends5, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends5.Location = new System.Drawing.Point(0, 292);
-            this.friends5.Name = "friends5";
-            this.friends5.Size = new System.Drawing.Size(282, 73);
-            this.friends5.TabIndex = 4;
-            // 
-            // friends4
-            // 
-            this.TransitionPanel.SetDecoration(this.friends4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends4.Location = new System.Drawing.Point(0, 219);
-            this.friends4.Name = "friends4";
-            this.friends4.Size = new System.Drawing.Size(282, 73);
-            this.friends4.TabIndex = 3;
-            // 
-            // friends3
-            // 
-            this.TransitionPanel.SetDecoration(this.friends3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends3.Location = new System.Drawing.Point(0, 146);
-            this.friends3.Name = "friends3";
-            this.friends3.Size = new System.Drawing.Size(282, 73);
-            this.friends3.TabIndex = 2;
-            // 
-            // friends2
-            // 
-            this.TransitionPanel.SetDecoration(this.friends2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends2.Location = new System.Drawing.Point(0, 73);
-            this.friends2.Name = "friends2";
-            this.friends2.Size = new System.Drawing.Size(282, 73);
-            this.friends2.TabIndex = 1;
-            // 
-            // friends1
-            // 
-            this.TransitionPanel.SetDecoration(this.friends1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.friends1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.friends1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.friends1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.friends1.Location = new System.Drawing.Point(0, 0);
-            this.friends1.Name = "friends1";
-            this.friends1.Size = new System.Drawing.Size(282, 73);
-            this.friends1.TabIndex = 0;
+            this.PanelContenedorFriends.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelContenedorFriends_MouseClick);
             // 
             // guna2Panel1
             // 
@@ -865,7 +733,7 @@
             this.PanelContenedorSuperior.Controls.Add(this.BtnMinimizer);
             this.PanelContenedorSuperior.Controls.Add(this.BtnClose);
             this.PanelContenedorSuperior.Controls.Add(this.guna2HtmlLabel12);
-            this.PanelContenedorSuperior.Controls.Add(this.guna2HtmlLabel11);
+            this.PanelContenedorSuperior.Controls.Add(this.LblNombreHablante);
             this.PanelContenedorSuperior.Controls.Add(this.guna2CirclePictureBox7);
             this.PanelContenedorSuperior.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.PanelContenedorSuperior.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 1);
@@ -938,19 +806,19 @@
             this.guna2HtmlLabel12.TabIndex = 19;
             this.guna2HtmlLabel12.Text = "Juan Alberto";
             // 
-            // guna2HtmlLabel11
+            // LblNombreHablante
             // 
-            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.White;
-            this.TransitionPanel.SetDecoration(this.guna2HtmlLabel11, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.guna2HtmlLabel11, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2HtmlLabel11, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.ForeColor = System.Drawing.Color.Gray;
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(94, 22);
-            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(121, 26);
-            this.guna2HtmlLabel11.TabIndex = 19;
-            this.guna2HtmlLabel11.Text = "Juan Alberto";
+            this.LblNombreHablante.BackColor = System.Drawing.Color.White;
+            this.TransitionPanel.SetDecoration(this.LblNombreHablante, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.LblNombreHablante, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.LblNombreHablante, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.LblNombreHablante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNombreHablante.ForeColor = System.Drawing.Color.Gray;
+            this.LblNombreHablante.Location = new System.Drawing.Point(94, 22);
+            this.LblNombreHablante.Name = "LblNombreHablante";
+            this.LblNombreHablante.Size = new System.Drawing.Size(121, 26);
+            this.LblNombreHablante.TabIndex = 19;
+            this.LblNombreHablante.Text = "Juan Alberto";
             // 
             // guna2CirclePictureBox7
             // 
@@ -968,123 +836,79 @@
             this.guna2CirclePictureBox7.TabStop = false;
             this.guna2CirclePictureBox7.Click += new System.EventHandler(this.guna2CirclePictureBox7_Click);
             // 
-            // PanelContenedorCentral
+            // Prueba
             // 
-            this.PanelContenedorCentral.BackColor = System.Drawing.Color.White;
-            this.PanelContenedorCentral.BorderThickness = 5;
-            this.PanelContenedorCentral.Controls.Add(this.myMessage1);
-            this.PanelContenedorCentral.Controls.Add(this.myMessage2);
-            this.PanelContenedorCentral.Controls.Add(this.youMessage1);
-            this.PanelContenedorCentral.Controls.Add(this.guna2Panel2);
-            this.PanelContenedorCentral.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
-            this.Prueba.SetDecoration(this.PanelContenedorCentral, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.PanelContenedorCentral, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.PanelContenedorCentral, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.PanelContenedorCentral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedorCentral.Location = new System.Drawing.Point(297, 90);
-            this.PanelContenedorCentral.Name = "PanelContenedorCentral";
-            this.PanelContenedorCentral.Size = new System.Drawing.Size(514, 414);
-            this.PanelContenedorCentral.TabIndex = 39;
+            this.Prueba.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.Prueba.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 2F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.Prueba.DefaultAnimation = animation1;
             // 
-            // myMessage1
+            // TransitionBtns
             // 
-            this.myMessage1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.myMessage1.AutoSize = true;
-            this.Prueba.SetDecoration(this.myMessage1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.myMessage1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.myMessage1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.myMessage1.Location = new System.Drawing.Point(44, 10);
-            this.myMessage1.Message = "Manuel Arturo Machado \r\n";
-            this.myMessage1.Name = "myMessage1";
-            this.myMessage1.Size = new System.Drawing.Size(426, 98);
-            this.myMessage1.TabIndex = 38;
+            this.TransitionBtns.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Scale;
+            this.TransitionBtns.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.TransitionBtns.DefaultAnimation = animation2;
+            this.TransitionBtns.TimeStep = 0.05F;
             // 
-            // myMessage2
+            // TransitionPanel
             // 
-            this.myMessage2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.myMessage2.AutoSize = true;
-            this.Prueba.SetDecoration(this.myMessage2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.myMessage2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.myMessage2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.myMessage2.Location = new System.Drawing.Point(44, 221);
-            this.myMessage2.Message = "Manuel Arturo Machado \r\n";
-            this.myMessage2.Name = "myMessage2";
-            this.myMessage2.Size = new System.Drawing.Size(426, 98);
-            this.myMessage2.TabIndex = 37;
+            this.TransitionPanel.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.TransitionPanel.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.TransitionPanel.DefaultAnimation = animation3;
             // 
-            // youMessage1
+            // timer1
             // 
-            this.youMessage1.AutoSize = true;
-            this.Prueba.SetDecoration(this.youMessage1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.youMessage1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.youMessage1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.youMessage1.Location = new System.Drawing.Point(44, 114);
-            this.youMessage1.Message = "Manuel Arturo Machado \r\n";
-            this.youMessage1.Name = "youMessage1";
-            this.youMessage1.Size = new System.Drawing.Size(426, 98);
-            this.youMessage1.TabIndex = 36;
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // guna2Panel2
+            // timer2
             // 
-            this.guna2Panel2.Controls.Add(this.guna2TextBox2);
-            this.guna2Panel2.Controls.Add(this.pictux4);
-            this.guna2Panel2.Controls.Add(this.pictureBox2);
-            this.guna2Panel2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
-            this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.Prueba.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 353);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(514, 61);
-            this.guna2Panel2.TabIndex = 32;
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox2.AutoRoundedCorners = true;
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
-            this.guna2TextBox2.BorderRadius = 19;
-            this.guna2TextBox2.BorderThickness = 2;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TransitionBtns.SetDecoration(this.guna2TextBox2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.guna2TextBox2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionPanel.SetDecoration(this.guna2TextBox2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(69, 11);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox2.PlaceholderText = "Message...";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(376, 40);
-            this.guna2TextBox2.TabIndex = 10;
-            // 
-            // pictux4
-            // 
-            this.pictux4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictux4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TransitionPanel.SetDecoration(this.pictux4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.TransitionBtns.SetDecoration(this.pictux4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Prueba.SetDecoration(this.pictux4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.pictux4.Image = ((System.Drawing.Image)(resources.GetObject("pictux4.Image")));
-            this.pictux4.Location = new System.Drawing.Point(452, 6);
-            this.pictux4.Name = "pictux4";
-            this.pictux4.Size = new System.Drawing.Size(50, 50);
-            this.pictux4.TabIndex = 35;
-            this.pictux4.TabStop = false;
+            this.timer2.Enabled = true;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // pictureBox2
             // 
@@ -1101,69 +925,84 @@
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
             // 
-            // Prueba
+            // BtnEnviar
             // 
-            this.Prueba.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
-            this.Prueba.Cursor = null;
-            animation6.AnimateOnlyDifferences = true;
-            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
-            animation6.LeafCoeff = 0F;
-            animation6.MaxTime = 1F;
-            animation6.MinTime = 2F;
-            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
-            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
-            animation6.MosaicSize = 0;
-            animation6.Padding = new System.Windows.Forms.Padding(0);
-            animation6.RotateCoeff = 0F;
-            animation6.RotateLimit = 0F;
-            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
-            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
-            animation6.TimeCoeff = 0F;
-            animation6.TransparencyCoeff = 0F;
-            this.Prueba.DefaultAnimation = animation6;
+            this.BtnEnviar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnEnviar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TransitionPanel.SetDecoration(this.BtnEnviar, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.BtnEnviar, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.BtnEnviar, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.BtnEnviar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEnviar.Image")));
+            this.BtnEnviar.Location = new System.Drawing.Point(452, 6);
+            this.BtnEnviar.Name = "BtnEnviar";
+            this.BtnEnviar.Size = new System.Drawing.Size(50, 50);
+            this.BtnEnviar.TabIndex = 35;
+            this.BtnEnviar.TabStop = false;
+            this.BtnEnviar.Click += new System.EventHandler(this.BtnEnviar_Click_1);
             // 
-            // TransitionBtns
+            // TxtMensje
             // 
-            this.TransitionBtns.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Scale;
-            this.TransitionBtns.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 0F;
-            this.TransitionBtns.DefaultAnimation = animation5;
-            this.TransitionBtns.TimeStep = 0.05F;
+            this.TxtMensje.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtMensje.AutoRoundedCorners = true;
+            this.TxtMensje.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
+            this.TxtMensje.BorderRadius = 19;
+            this.TxtMensje.BorderThickness = 2;
+            this.TxtMensje.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TransitionBtns.SetDecoration(this.TxtMensje, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Prueba.SetDecoration(this.TxtMensje, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionPanel.SetDecoration(this.TxtMensje, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TxtMensje.DefaultText = "";
+            this.TxtMensje.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TxtMensje.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TxtMensje.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtMensje.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtMensje.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtMensje.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.TxtMensje.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtMensje.Location = new System.Drawing.Point(69, 11);
+            this.TxtMensje.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtMensje.Name = "TxtMensje";
+            this.TxtMensje.PasswordChar = '\0';
+            this.TxtMensje.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.TxtMensje.PlaceholderText = "Message...";
+            this.TxtMensje.SelectedText = "";
+            this.TxtMensje.Size = new System.Drawing.Size(376, 40);
+            this.TxtMensje.TabIndex = 10;
             // 
-            // TransitionPanel
+            // guna2Panel2
             // 
-            this.TransitionPanel.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
-            this.TransitionPanel.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.TransitionPanel.DefaultAnimation = animation4;
+            this.guna2Panel2.Controls.Add(this.TxtMensje);
+            this.guna2Panel2.Controls.Add(this.BtnEnviar);
+            this.guna2Panel2.Controls.Add(this.pictureBox2);
+            this.guna2Panel2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            this.Prueba.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionPanel.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel2.Location = new System.Drawing.Point(297, 443);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(514, 61);
+            this.guna2Panel2.TabIndex = 40;
+            // 
+            // PanelContenedorCentral
+            // 
+            this.PanelContenedorCentral.AutoScroll = true;
+            this.PanelContenedorCentral.BackColor = System.Drawing.Color.White;
+            this.PanelContenedorCentral.BorderThickness = 5;
+            this.PanelContenedorCentral.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.Prueba.SetDecoration(this.PanelContenedorCentral, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionBtns.SetDecoration(this.PanelContenedorCentral, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TransitionPanel.SetDecoration(this.PanelContenedorCentral, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.PanelContenedorCentral.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContenedorCentral.Location = new System.Drawing.Point(297, 90);
+            this.PanelContenedorCentral.Name = "PanelContenedorCentral";
+            this.PanelContenedorCentral.Padding = new System.Windows.Forms.Padding(0, 0, 0, 200);
+            this.PanelContenedorCentral.Size = new System.Drawing.Size(514, 353);
+            this.PanelContenedorCentral.TabIndex = 41;
             // 
             // AppChat
             // 
@@ -1171,6 +1010,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1107, 504);
             this.Controls.Add(this.PanelContenedorCentral);
+            this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.PanelContenedorSuperior);
             this.Controls.Add(this.pp);
             this.Controls.Add(this.PanelContenedorIzquierdo);
@@ -1182,6 +1022,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AppChat";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.AppChat_Load);
             this.PanelContenedorIzquierdo.ResumeLayout(false);
             this.PanelMiPerfil.ResumeLayout(false);
             this.PanelMiPerfil.PerformLayout();
@@ -1189,7 +1030,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.PanelContenedorFriends.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.PanelTopIzquierdo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
@@ -1202,11 +1042,9 @@
             this.PanelContenedorSuperior.ResumeLayout(false);
             this.PanelContenedorSuperior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox7)).EndInit();
-            this.PanelContenedorCentral.ResumeLayout(false);
-            this.PanelContenedorCentral.PerformLayout();
-            this.guna2Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictux4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnEnviar)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1239,26 +1077,11 @@
         private Guna.UI2.WinForms.Guna2Button BtnMinimizer;
         private Guna.UI2.WinForms.Guna2Button BtnClose;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LblNombreHablante;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox7;
-        private Guna.UI2.WinForms.Guna2Panel PanelContenedorCentral;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private System.Windows.Forms.PictureBox pictux4;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Panel PanelContenedorFriends;
-        private Components.Friends friends4;
-        private Components.Friends friends3;
-        private Components.Friends friends2;
-        private Components.Friends friends1;
-        private Components.Friends friends10;
-        private Components.Friends friends9;
-        private Components.Friends friends8;
-        private Components.Friends friends7;
-        private Components.Friends friends6;
-        private Components.Friends friends5;
         private Guna.UI2.WinForms.Guna2Panel PanelMiPerfil;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
@@ -1270,11 +1093,15 @@
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Messages.MyMessage myMessage1;
-        private Messages.MyMessage myMessage2;
-        private Messages.YouMessage youMessage1;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2Transition TransitionBtns;
         private Guna.UI2.WinForms.Guna2Transition TransitionPanel;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox BtnEnviar;
+        private Guna.UI2.WinForms.Guna2TextBox TxtMensje;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel PanelContenedorCentral;
     }
 }

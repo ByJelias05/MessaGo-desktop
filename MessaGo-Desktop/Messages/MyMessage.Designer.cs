@@ -35,7 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.BoxMensaje = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblMensaje = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -46,7 +46,7 @@
             // 
             // guna2Panel4
             // 
-            this.guna2Panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.guna2Panel4.BackColor = System.Drawing.Color.White;
             this.guna2Panel4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
             this.guna2Panel4.BorderRadius = 23;
@@ -110,15 +110,12 @@
             // 
             // BoxMensaje
             // 
-            this.BoxMensaje.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BoxMensaje.AutoSize = true;
+            this.BoxMensaje.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BoxMensaje.BackColor = System.Drawing.Color.White;
             this.BoxMensaje.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(185)))), ((int)(((byte)(223)))));
             this.BoxMensaje.BorderRadius = 5;
             this.BoxMensaje.BorderThickness = 2;
-            this.BoxMensaje.Controls.Add(this.label1);
+            this.BoxMensaje.Controls.Add(this.LblMensaje);
             this.BoxMensaje.Controls.Add(this.guna2Panel3);
             this.BoxMensaje.Controls.Add(this.guna2Panel2);
             this.BoxMensaje.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,18 +127,18 @@
             this.BoxMensaje.TabIndex = 0;
             this.BoxMensaje.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
-            // label1
+            // LblMensaje
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 4);
-            this.label1.MaximumSize = new System.Drawing.Size(356, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 20);
-            this.label1.TabIndex = 37;
-            this.label1.Text = "Manuel Arturo Machado \r\n";
+            this.LblMensaje.AutoSize = true;
+            this.LblMensaje.BackColor = System.Drawing.Color.White;
+            this.LblMensaje.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblMensaje.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMensaje.Location = new System.Drawing.Point(4, 4);
+            this.LblMensaje.MaximumSize = new System.Drawing.Size(356, 0);
+            this.LblMensaje.Name = "LblMensaje";
+            this.LblMensaje.Size = new System.Drawing.Size(143, 20);
+            this.LblMensaje.TabIndex = 37;
+            this.LblMensaje.Text = "Manuel Arturo Machado \r\n";
             // 
             // guna2Panel3
             // 
@@ -170,7 +167,6 @@
             this.BoxMensaje.ResumeLayout(false);
             this.BoxMensaje.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -182,6 +178,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
         private Guna.UI2.WinForms.Guna2Panel BoxMensaje;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblMensaje;
     }
 }
